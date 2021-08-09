@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+font-family: 'Poppins', sans-serif;
+
+}
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2{
+  font-size: 1.8rem ;
+  font-weight:600 ;
+}
+h3{
+  font-size: 1.4rem ;
+  font-weight: 800 ;
+}
+h4{
+  font-size: 1.1rem ;
+  font-weight: 600 ;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1d1d;
+
+}
+h6{
+color: #dbdbdb;
+}
+button{
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #1d1d1d;
+  color: aliceblue;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease ;
+}
+button:hover{
+  background-color: aquamarine;
+
+}
+
+hr{
+  width: 30px;
+  height: 2px;
+  background-color: aqua ;
+}
+.star{
+  padding: 10px 0;
+}
+.star i{
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+.navbar{
+ font-size: 16px; 
+ top: 0;
+ left: 0;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link{
+padding: 0 20px;
+color: black;
+transition: 0.3s ease;
+font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i.active{
+  
+  color: rgb(80, 176, 255);
+}
+.logo-img{
+  /* padding: 5em; */
+  width: 20%;
+  height: 20%;
+  /* margin-right: 0%;
+  margin-left: 0%; */
+
+}
+
+
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+transition: 0.3s ease;
+  text-align: left;
+  padding-right: 1em;
+}
+.navbar-light .navbar-toggler{
+  border: none;
+  outline: none;
+
+}
+.navbar-toggler{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#bar{
+  font-size: 1.5rem;
+  padding: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  color: black;
+  align-self: right;
+}
+#bar:hover
+#bar.active{
+  color: aqua;
+
+}
+@media only screen and ( max-width:1000px){
+  body > nav > div > button:hover
+  body > nav > div > button:focus{
+    background-color: aqua;
+  }
+  body > nav > div > button:hover #bar
+  body > nav > div > button:focus #bar{
+    color: whitesmoke;
+  }
+  #navbarSupportedContent > ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a{
+    padding: 10px 0;
+
+  }
+}
+
+#home{
+  background-image: url("/bimage1.jpeg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 70px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 700;
+
+}
+#home span{
+  color: aqua;
+}
+#brand img{
+  width: 20%;
+  height: 20vh;
+  
+}
+.text{
+  text-align: center;
+}
+
+#new .one{
+  width: 100%;
+  height: 100%;
+  background-position: center center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#new .one .details{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+transition: 0.3s ease;
+
+}
+
+#new .one:hover .details{
+  cursor: pointer;
+  /* background-color: whitesmoke; */
+  
+}
+
+#new .one .details button{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  color: #222;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+
+
+}
+
+#new .one .details button:hover{
+ 
+  color: beige;
+  border-bottom: 1px solid whitesmoke;
+}                                     
+
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+font-weight: 700;
+color: white;
+}
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+font-weight: 700;
+color: white;
+}
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+font-weight: 700;
+color: white;
+}
+
+.product{
+  cursor: pointer;
+ font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.product img{
+transition: 0.3s all;
+}
+.product:hover img{
+  opacity: 0.7;
+}
+.product .buy-btn{
+  background: aqua;
+  transform: translateY(20px);
+  opacity: 0;
+   transition: 0.3s all;
+}
+.product:hover .buy-btn{
+  transform: translateY(0);
+  opacity: 1;
+   
+}
+
+#banner{
+  background-image: url("/img/banner/banner1.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: top 70px center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-weight: 700;
+
+}
+
+#banner h4{
+  color: #dbdbdb;
+  font-weight: 3000;
+}
+#banner h1{
+  color: #fff;
+font-weight: 800;
+}
+#banner button{
+  background-color: aqua;
+
+}
+
+footer{
+  background-color: #222;
+}
+
+footer h5{
+ color: #dbdbdb;
+ font-weight: 800;
+ font-size: 1.2rem;
+
+}
+
+footer li{
+  padding-bottom: 4px;
+}
+
+footer li a{
+  font-size: 0.8rem;
+  color: aquamarine;
+}
+footer li a:hover{
+  color: #dbdbdb;
+}
+
+footer p{
+  color: #999;
+  font-size: 0.8rem;
+
+}
+
+footer .copyright a{
+  color :black;
+  width: 38px;
+  height: 38px;
+  background-color:white;
+  display: inline-block;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  margin: 0 5px;
+
+}
+.pay{
+  width: 70%;
+  height: 80%;
+}
+
+footer .copyright a:hover{
+  color: #fff;
+  background-color: aqua;
+}

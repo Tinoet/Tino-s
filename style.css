@@ -65,7 +65,12 @@ button{
   transition: 0.3s ease ; */
 }
 button:hover{
-  background-color: aquamarine;
+  color:aqua;
+  box-shadow: 3px 3px 20px #03e9fa,
+    3px 2px 20px #03e9fa;
+  
+
+/*   background-color: aquamarine; */
 
 }
 

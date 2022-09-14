@@ -49,7 +49,7 @@ button{
   colour:aliceblue;
   font-family: pangolin;
   font-weight:bold;
-  cursor:pointer;
+/*   cursor:pointer; */
   border:2px solid aqua;
   
 /*   
